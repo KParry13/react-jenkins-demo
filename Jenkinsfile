@@ -32,6 +32,10 @@ pipeline {
                     echo "Dockerizing the application..."
                     docker --version
                     docker images
+
+                    docker build -t kparry/react-jenkins-docker:latest
+
+                    docker images
                 '''
             }
         }
