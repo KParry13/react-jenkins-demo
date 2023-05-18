@@ -40,9 +40,10 @@ pipeline {
             }
         }
         
-        stage('Deploy New Image to AWS EC@') {
+        stage('Deploy New Image to AWS EC2') {
             steps {
-                // SSH into out remote server
+                // SSH into our remote server
+
                 // Shut down the current running image
                 // Pull the new image that was just pushed
                 // Launch that new running on our remote server
