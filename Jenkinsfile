@@ -31,6 +31,7 @@ pipeline {
                 sh '''
                     echo "Dockerizing the application..."
                     docker --version
+                    docker images
                 '''
             }
         }
