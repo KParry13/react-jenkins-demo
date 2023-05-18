@@ -33,7 +33,7 @@ pipeline {
                     docker --version
                     docker images
 
-                    docker build -t kparry/react-jenkins-docker:latest
+                    docker build -t kparry/react-jenkins-docker:latest .
 
                     docker images
                 '''
